@@ -1,5 +1,4 @@
 import java.util.Stack;
-
 public class BracketChecker {
     public static boolean isBalanced(String str) {
         if (str == null) {
@@ -11,9 +10,6 @@ public class BracketChecker {
         }
         Stack<Character> stack = new Stack<>();
         for (char c : str.toCharArray()) {
-            if (Character.isWhitespace(c)) {
-                continue;
-            }
             if (c == '(' || c == '{' || c == '[') {
                 stack.push(c);
             }
